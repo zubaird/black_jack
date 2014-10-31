@@ -6,12 +6,20 @@ describe BlackJack::Card do
 
   describe 'initialized values' do
     it "reports them publicly" do
-      expect(card.suit).to be == :heard
+      expect(card.suit).to be == :heart
       expect(card.face).to be == face
     end
   end
 
   describe '#values' do
+    context 'when the face is a number' do
+      let(:face) { '6' }
+
+      it "returns that number in an array" do
+        expect(card.values).to be == [6]
+      end
+    end
+
     context 'when face is an ace' do
       let(:face) { 'A' }
 
