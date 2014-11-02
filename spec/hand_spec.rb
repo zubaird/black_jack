@@ -1,6 +1,10 @@
 require 'spec_helper'
 
 describe BlackJack::Hand do
+  before do
+    pending("do this spec after Deck is complete")
+  end
+
   let(:hand) { BlackJack::Hand.new }
 
   describe 'on initialization' do

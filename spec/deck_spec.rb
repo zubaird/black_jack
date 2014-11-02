@@ -1,6 +1,10 @@
 require 'spec_helper'
 
 describe BlackJack::Deck do
+  before do
+    pending("do this spec after Card is complete")
+  end
+
   let(:deck) { BlackJack::Deck.new }
 
   describe 'on initialization' do
@@ -11,7 +15,7 @@ describe BlackJack::Deck do
     end
   end
 
-  describe '#shuffle' do
+  xdescribe '#shuffle' do
     it "changes the order of the cards" do
       original_deck_order = deck.cards.dup
       shuffled_order = deck.shuffle
@@ -19,7 +23,7 @@ describe BlackJack::Deck do
     end
   end
 
-  describe '#deal' do
+  xdescribe '#deal' do
     it "decrements the deck size by 1" do
       deck.deal
       expect(deck.size).to be == 51
