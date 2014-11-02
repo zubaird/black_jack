@@ -1,7 +1,12 @@
-# Ruby Exercise Template
+# Black Jack
 
-This is a blank project you can use to craft your own Ruby projects for exercises
-and assessments.
+This is a OO Ruby exercise that builds out the logic for a BlackJack game in
+four classes.
+
+* Card: guides via failing tests through building an object
+* Deck: also guides through tests to working with Card objects in another object
+* Hand: starts with guiding tests and transitions to writing tests. It is a stretch exercise
+* Game: is completely unmapped and intended for stretch use only
 
 #### Gems
 
@@ -10,16 +15,11 @@ set the ruby version and the gemset. Once you pull down this project once, and
 bundle gems, you shouldn't have to do it again. Your computer should just know
 which Ruby and gemset to use.
 
-## Getting Started
-
+## Exercise
 1. `bundle` to get your gems
-2. Write tests:
-    * Create new files in your spec directory. If they end with '\_spec.rb', rspec
-    will run them
-    * Write 'require "spec_helper"' on the top of your file
-    * Start writing specs for your code
-    * If you need to add helper functions, or fixture data, there is a support
-    directory. Any file that you include will be required.
-3. Write code: The lib directory is hanging out just waiting for you to write some
-code and put it there. Files in that directory will be automatically required in your
-tests.
+2. Follow the failing tests to build the Card and Deck classes
+
+## Stretches
+1. Hand requires that your start writing your own tests and algorithms
+2. Game is completely unmapped and requires you to create a game algorithm from
+tests down
