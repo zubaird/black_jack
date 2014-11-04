@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe BlackJack::Deck do
   before do
-    pending("do this spec after Card is complete")
+    # xpending("do this spec after Card is complete")
   end
 
   let(:deck) { BlackJack::Deck.new }
@@ -15,11 +15,11 @@ describe BlackJack::Deck do
     end
   end
 
-  xdescribe '#shuffle' do
+  describe '#shuffle' do
     it "changes the order of the cards" do
       original_deck_order = deck.cards.dup
       shuffled_order = deck.shuffle
-      expect(deck.cards).to be == shuffled_order
+      expect(original_deck_order).to_not be == shuffled_order
     end
   end
 
