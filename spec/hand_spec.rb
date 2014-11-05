@@ -34,7 +34,7 @@ describe BlackJack::Hand do
       context 'when it is a non-ace card' do
         it "is an array of size 1" do
           hand.add(BlackJack::Card.new(:heart, 'K'))
-          expect(hand.size).to be == 1
+          expect(hand.values).to be == [10]
         end
         it "includes the value of the card" do
           expect(hand.value).to be == ('10')

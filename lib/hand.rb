@@ -2,24 +2,31 @@ module BlackJack
   class Hand
 
     def initialize
-      @values = []
+      @cards = []
     end
 
     def empty?
-      true
+      @cards.empty?
     end
 
     def values
-      @values
+      @cards
+    end
+
+    def face
+
     end
 
     def add(new_card)
-      @values ||= []
-      @values << new_card
+      @cards << new_card
     end
 
     def size
-      @values.size
+      @cards.size
+    end
+
+    def value
+      [@cards.inject(0) {|sum, card| sum + card.values.first }]
     end
 
   end

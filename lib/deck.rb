@@ -16,7 +16,6 @@ module BlackJack
       @deck = deck
     end
 
-
     def size
       @deck.size
     end
